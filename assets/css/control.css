@@ -1,0 +1,60 @@
+#play-button {
+  background-image: url(icons/glyphicons-174-play.png);
+  height: 22px;
+  width: 24px;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  float: left;
+  background-position-y: 2px;
+  background-position-x: 5px;
+  background-color: #586369;
+
+/*  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.8), 0px 1px 0px rgba(255,255,255,0.2);*/
+}
+
+#stop-button {
+  background-image: url(icons/glyphicons-176-stop.png);
+  height: 22px;
+  width: 24px;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  float: left;
+  background-position-y: 2px;
+  background-position-x: 5px;
+  background-color: #586369;
+
+/*  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.8), 0px 1px 0px rgba(255,255,255,0.2);*/
+}
+
+#control-buttons {
+  height: 50%;
+  overflow: hidden;
+}
+
+#main-control-panel {
+  height: 95%;
+  overflow: hidden;
+  width: 10%;
+  background-color: #323F45;
+  border-style: solid;
+  border-width: thin;
+  margin-left: 1px;
+  border-color: rgb(3, 19, 28);
+}
+
+#time-display{
+  height: 50%;
+  overflow: hidden;
+  background-color:#2A4D62;
+  text-align: center;
+
+/*  -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.8), 0px 1px 0px rgba(255,255,255,0.2);*/
+}

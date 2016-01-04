@@ -1,0 +1,13 @@
+<div class="modal-change-instrument-options-subpanel">
+{% for radio in control.value %}
+
+  {% if option.value == instrumentValue %}
+    <input type="radio" name="radios_{{control.option}}" id="radios_{{control.option}}_{{radio.position}}" value="{{radio.position}}" checked>{{ radio.label }}
+  {% endif %}
+
+  {% if option.value != instrumentValue %}
+    <input type="radio" name="radios_{{control.option}}" id="radios_{{control.option}}_{{radio.position}}" value="{{radio.position}}">{{ radio.label }}
+  {% endif %}
+
+{% endfor %}
+</div>

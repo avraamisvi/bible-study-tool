@@ -1,0 +1,21 @@
+#modal-change-group-name {
+  position: absolute;
+  height: 150px;
+  width: 550px;
+  z-index: 9999;
+  background-color: rgb(63, 68, 74);
+  bottom: 5px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#modal-change-instrument-options {
+  position: absolute;
+  height: 150px;
+  width: 550px;
+  z-index: 9999;
+  background-color: rgb(63, 68, 74);
+  bottom: 5px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}

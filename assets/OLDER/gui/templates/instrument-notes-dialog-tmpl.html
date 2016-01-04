@@ -1,0 +1,35 @@
+<div id="instrument-notes-dialog-{{id}}" class="instrument-notes-dialog">
+
+<div id="instrument-notes-dialog-panel-{{id}}" class="instrument-notes-dialog-panel">
+
+  <div class="instrument-notes-dialog-group-field" >
+    <label for="instrument-notes-dialog-field-octave-{{id}}" class="dialog-field-label">Octave:</label>
+    <input type="number" min="-5" max="5" id="instrument-notes-dialog-field-octave-{{id}}" class="dialog-field" value="0">
+  </div>
+
+  <div id="instrument-notes-notes-{{id}}" class="instrument-notes-notes-panel">
+    {% for note in notes %}
+      <div id="instrument-notes-dialog-note-panel-{{note.index}}-{{id}}" data-index="{{note.index}}" data-note="{{note.name}}" class="instrument-notes-dialog-note-panel {{note.border}}">
+
+        <div id="instrument-notes-dialog-note-panel-check-{{note.index}}-{{id}}" style="{{note.selected}}" class="instrument-notes-dialog-note-panel-check {{note.black}}">
+        </div>
+
+        <div id="instrument-notes-dialog-note-{{note.index}}-{{id}}" data-note="{{note.index}}" class="instrument-notes-dialog-note">
+            <div class="instrument-notes-dialog-note-note-text {{note.black}} ">
+                {%if not note.half %}
+                  {{note.name}}
+                {%endif%}
+                <div class="instrument-notes-dialog-note-note-text-line" {{note.lineStyle}}></div>
+            </div>
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+  <div id="instrument-notes-dialog-ok-buttom-{{id}}" style="margin-top: -2px;margin-left: 200px;" class="mini-toolbar-button">
+    <i class="material-icons md-18">check_circle</i>
+  </div>
+
+</div>

@@ -1,0 +1,13 @@
+{
+  "name": "bible-study-tool",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron-prebuilt": "~0.35.0"
+  },
+  "dependencies": {
+    "nunjucks": "~1.3.4",
+    "jquery": "~2.1.4",
+    "base-class-extend": "0.0.19"
+  }
+}

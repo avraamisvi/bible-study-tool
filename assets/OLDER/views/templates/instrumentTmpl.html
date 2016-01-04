@@ -1,0 +1,35 @@
+<div id="inst_id_{{ dat.instr.id }}" class="panel-instrument">
+
+  <div id="inst_id_{{ dat.instr.id }}_left_buttons" class="panel-instrument-left-buttons">
+    <div class="panel-instrument-remove" id="inst_id_{{ dat.instr.id }}_remove" onclick="patternsView.removeInstrument({{ dat.instr.id }})">
+    </div>
+
+    <div class="panel-instrument-group" id="inst_id_{{ dat.instr.id }}_group" onclick="compositionView.toggleGroupInstrument({{ dat.instr.id }})">
+    </div>
+  </div>
+
+  <div class="panel-instrument-button" id="inst_id_{{ dat.instr.id }}_button" onclick="patternsView.openInstrumentsOptions({{ dat.instr.id }})">{{ dat.instr.Label }}</div>
+
+  <div class="panel-instrument-check" id="inst_id_{{ dat.instr.id }}_check" onclick="patternsView.select({{ dat.instr.id }})">
+  </div>
+
+  <div id="inst_id_{{ dat.instr.id }}_display" onclick="patternsView.openPianoRoll({{ dat.instr.id }})" style="display:none;" class="panel-instrument-display"></div>
+
+  <div id="inst_id_{{ dat.instr.id }}_patterns" class="panel-instrument-patterns">
+
+    {% for pattern in dat.patterns %}
+        {% if pattern >= 5 and pattern <= 8 or pattern >= 13 %}
+          <div id="inst_id_{{ dat.instr.id }}_pattern{{ pattern }}" onclick="patternsView.selectPattern({{ dat.instr.id }}, {{ pattern }})" class="panel-instrument-pattern-second">
+          </div>
+        {% else %}
+          <div id="inst_id_{{ dat.instr.id }}_pattern{{ pattern }}" onclick="patternsView.selectPattern({{ dat.instr.id }}, {{ pattern }})" class="panel-instrument-pattern-first">
+          </div>
+        {% endif %}
+    {% endfor %}
+
+  </div>
+
+  <div id="inst_id_{{ dat.instr.id }}_pattern_mode_check" class="panel-instrument-mode-pattern-check" onclick="patternsView.changeMode({{ dat.instr.id }})"></div>
+
+</div>
+<!--br clear="all" id="break_instr_id_{{ dat.instr.id }}"-->

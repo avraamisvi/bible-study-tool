@@ -1,0 +1,19 @@
+<div class="modal-change-instrument-options-subpanel">
+
+{{control.label}}
+
+  <select id="combobox_{{control.option}}">
+{% for item in option.list %}
+
+  {% if instrumentValue == loop.index %}
+    <option value="{{loop.index}}" selected>{{item}}</option>
+  {% else %}
+    <option value="{{loop.index}}">{{item}}</option>
+  {% endif %}
+
+
+
+{% endfor %}
+  </select>
+
+</div>

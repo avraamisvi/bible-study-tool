@@ -1,0 +1,48 @@
+<div id="instrument-settings-dialog" class="instrument-settings-dialog">
+
+    <div id="instrument-name-dialog-body" class="instrument-settings-dialog-body">
+
+    <div id="instrument-name-dialog-body-fields" class="dialog-body-fields">
+
+      <div class="dialog-body-field">
+        <label for="instrument-name-dialog-field-color" class="dialog-field-label">Color:</label>
+        <input type="color" id="instrument-name-dialog-field-color" class="dialog-field" value="{{color}}">
+      </div>
+
+      <div class="dialog-body-field">
+        <label class="dialog-field-label">Duration:</label>
+
+        <div id="instrument-settings-dialog-duration-value">0.3</div>
+
+        <input style="display:none;" id="instrument-name-dialog-field-loop-speed-1" style="display:none;" type="radio" name="instrument-name-dialog-field-loop-speed" value="1" checked>
+        <input style="display:none;" id="instrument-name-dialog-field-loop-speed-2" style="display:none;" type="radio" name="instrument-name-dialog-field-loop-speed" value="2">
+
+        <div id="instrument-settings-dialog-slider-frame-{{id}}" class="instrument-settings-dialog-slider-frame">
+            <div id="instrument-settings-dialog-slider-buttom-{{id}}" style="cursor: move;" class="instrument-settings-dialog-slider-buttom"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="dialog-buttons"  style="display:none;" >
+
+      <div id="instrument-settings-dialog-save-button2" class="mini-toolbar-button">
+        <i class="material-icons md-18">check_circle</i>
+      </div>
+
+      <div id="instrument-settings-dialog-cancel-button" style="display:none;" class="dialog-button cancel button-effect">
+        <div class="dialog-button-text">CANCEL</div>
+      </div>
+      <div id="instrument-settings-dialog-notes-button" style="display:none;" class="dialog-button options button-effect">
+        <div class="dialog-button-text">ADVANCED</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="instrument-settings-dialog-save-button" style="margin-left:200px;bottom: 10px;position: relative;" class="mini-toolbar-button">
+    <i class="material-icons md-18">check_circle</i>
+  </div>
+
+</div>

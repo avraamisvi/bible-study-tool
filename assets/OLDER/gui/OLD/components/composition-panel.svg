@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="650.11389"
+   height="199.96121"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="composition-panel.svg">
+  <defs
+     id="defs4">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern3055"
+       id="pattern3086"
+       patternTransform="translate(284.99955,97.61076)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4772"
+       id="pattern3079"
+       patternTransform="translate(-311.76074,88.9378)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4774"
+       id="pattern3055"
+       patternTransform="translate(284.99955,97.61076)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4764"
+       id="pattern4774"
+       patternTransform="translate(-128.43803,338.30402)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4764"
+       id="pattern4772"
+       patternTransform="translate(-177.9355,338.30402)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern3765"
+       id="pattern4495"
+       patternTransform="translate(-325.78125,159.15625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="45"
+       height="110.125"
+       patternTransform="translate(-325.78125,95.15625)"
+       id="pattern3765">
+      <g
+         id="g3761"
+         transform="translate(325.78125,-95.15625)">
+        <rect
+           style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.89231145;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2989"
+           width="21.107683"
+           height="108.25054"
+           x="-324.83954"
+           y="96.094055" />
+        <rect
+           y="96.094055"
+           x="-302.83954"
+           height="108.25054"
+           width="21.107683"
+           id="rect3759"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.89231145;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      </g>
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="50"
+       height="30"
+       patternTransform="translate(-386.28125,252.03125)"
+       id="pattern4538">
+      <rect
+         inkscape:label="#rect3000"
+         style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1.99999988;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="cmpPnlTrackLinePattern"
+         width="48"
+         height="28"
+         x="0.99658203"
+         y="1.0056152" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="50"
+       height="30"
+       patternTransform="translate(-522.14498,203.70119)"
+       id="pattern4764">
+      <g
+         transform="matrix(1,0,0,0.6,466.08151,-73.85522)"
+         id="g4757">
+        <rect
+           style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+           id="rect4751"
+           width="50"
+           height="50"
+           x="-466.08151"
+           y="123.09203" />
+        <rect
+           y="123.09203"
+           x="-466.08151"
+           height="50"
+           width="2.5"
+           id="rect4753"
+           style="fill:#000000;fill-opacity:1;stroke:none" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           id="rect4755"
+           width="2.5"
+           height="50"
+           x="-418.58151"
+           y="123.09203" />
+      </g>
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="270.4127"
+     inkscape:cy="82.151354"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1585"
+     inkscape:window-height="812"
+     inkscape:window-x="47"
+     inkscape:window-y="48"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.19387,32.446606)">
+    <g
+       id="cmpPnlTrackLineBaseGroup"
+       inkscape:label="#g3088">
+      <path
+         inkscape:label="#path4713"
+         style="fill:url(#pattern3086);fill-opacity:1;stroke:none"
+         d="m 235.32828,67.69461 50,0 0,30 -50,0 z"
+         id="cmpPnlTrackLineBase1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <rect
+       style="fill:url(#pattern4538);stroke:none"
+       width="50"
+       height="30"
+       x="-386.28125"
+       y="252.03125"
+       id="rect4541" />
+    <rect
+       y="345.46582"
+       x="-414.07401"
+       height="28"
+       width="48"
+       id="rect3812"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <g
+       transform="translate(-246.9823,35.355339)"
+       inkscape:label="#g3792"
+       id="g3814">
+      <rect
+         inkscape:label="#rect2998"
+         y="257.37772"
+         x="-167.51013"
+         height="50"
+         width="50"
+         id="rect3816"
+         style="fill:#999999;fill-opacity:1;stroke:none" />
+      <text
+         inkscape:label="#text3002"
+         xml:space="preserve"
+         style="font-size:14.62423801px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="-147.15875"
+         y="301.81506"
+         id="text3818"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3820"
+           x="-147.15875"
+           y="301.81506">0</tspan></text>
+    </g>
+    <path
+       style="fill:url(#pattern3079);fill-opacity:1;stroke:none"
+       d="m -311.93454,59.02165 50,0 0,30 -50,0 z"
+       id="cmpPnlTrackLineBase"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <g
+       id="cmpPnlSecondsBaseGroupOLD"
+       inkscape:label="#g3792"
+       transform="translate(-144.42441,-248.35607)">
+      <path
+         style="fill:#999999;fill-opacity:1;stroke:none"
+         d="m -167.51013,257.37772 50,0 0,50 -50,0 z"
+         id="cmpPnlSecondsPanelBase"
+         inkscape:connector-curvature="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="cmpPnlSecondBase"
+         y="301.81506"
+         x="-147.15875"
+         style="font-size:14.62423801px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"
+         inkscape:label="#text3002"><tspan
+           y="301.81506"
+           x="-147.15875"
+           id="tspan3004"
+           sodipodi:role="line">0</tspan></text>
+    </g>
+    <g
+       id="cmpPnlPatternLabelGroupBase"
+       inkscape:label="#g4564"
+       transform="translate(-345.49247,-100.58626)">
+      <path
+         inkscape:connector-curvature="0"
+         id="cmpPnlPatternLabelPanelBase"
+         d="m -165.57648,160.60791 198.000001,0 0,28 -198.000001,0 z"
+         style="fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1"
+         inkscape:label="#rect4555" />
+      <text
+         sodipodi:linespacing="125%"
+         id="cmpPnlPatternLabelBase"
+         y="179.53368"
+         x="-160.46194"
+         style="font-size:18.46993828px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"
+         inkscape:label="#text4560"><tspan
+           y="179.53368"
+           x="-160.46194"
+           id="tspan4562"
+           sodipodi:role="line">abcdefghijklmnopq</tspan></text>
+    </g>
+    <g
+       transform="translate(402.83841,-239.68311)"
+       inkscape:label="#g3792"
+       id="cmpPnlFrameSecondsGroup">
+      <path
+         style="fill:#999999;fill-opacity:1;stroke:none"
+         d="m -167.51013,257.37772 50,0 0,50 -50,0 z"
+         id="cmpPnlSecondsFrameBase"
+         inkscape:label="#rect4717"
+         inkscape:connector-curvature="0" />
+      <text
+         inkscape:label="#text3002"
+         xml:space="preserve"
+         style="font-size:14.62423801px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="-147.15875"
+         y="301.81506"
+         id="cmpPnlSecondBase1"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4721"
+           x="-147.15875"
+           y="301.81506">0</tspan></text>
+    </g>
+    <g
+       transform="translate(201.77035,-91.913301)"
+       inkscape:label="#g4564"
+       id="cmpPnlPatternLabelGroupBase1">
+      <path
+         inkscape:label="#rect4555"
+         style="fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1"
+         d="m -165.57648,160.60791 198.000001,0 0,28 -198.000001,0 z"
+         id="path4725"
+         inkscape:connector-curvature="0" />
+      <text
+         inkscape:label="#text4560"
+         xml:space="preserve"
+         style="font-size:18.46993828px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="-160.46194"
+         y="179.53368"
+         id="text4727"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4729"
+           x="-160.46194"
+           y="179.53368">abcdefghijklmnopq</tspan></text>
+    </g>
+    <g
+       id="cmpPnlFrameGroup"
+       transform="translate(-0.153203,0)"
+       inkscape:label="#g4649">
+      <path
+         style="fill:#cccccc;fill-opacity:1;stroke:none"
+         d="m 35.347073,-32.446606 199.999997,0 0,100 -199.999997,0 z"
+         id="cmpPnlPanelSeparator"
+         inkscape:connector-curvature="0"
+         inkscape:label="#rect4569" />
+      <g
+         transform="translate(-1.0203574,-0.554566)"
+         id="cmpPnlScrollBarHorizontalGroup"
+         inkscape:label="#g4603">
+        <path
+           inkscape:connector-curvature="0"
+           id="cmpPnlScrollBarHorizontalFrame"
+           d="m 236.36743,-31.89204 400,0 0,50 -400,0 z"
+           style="fill:#666666;fill-opacity:1;stroke:none"
+           inkscape:label="#rect4571" />
+        <path
+           inkscape:connector-curvature="0"
+           id="cmpPnlScrollBarHorizontalBar"
+           d="m 290.91565,-21.867294 291.91879,0 0,29.9999997 -291.91879,0 z"
+           style="fill:#cccccc;fill-opacity:1;stroke:none"
+           inkscape:label="#rect4597" />
+        <rect
+           y="-21.89204"
+           x="236.36743"
+           height="29.999998"
+           width="50"
+           id="cmpPnlScrollBarHorizontalLeftStop"
+           style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+           inkscape:label="#rect4599" />
+        <rect
+           y="-21.89204"
+           x="586.36743"
+           height="30"
+           width="50"
+           id="cmpPnlScrollBarHorizontalRightStop"
+           style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+           inkscape:label="#rect4601" />
+      </g>
+      <g
+         id="cmpPnlScrollBarJunction"
+         transform="translate(-0.57506154,-0.55456193)"
+         inkscape:label="#g4736">
+        <rect
+           y="-31.892044"
+           x="636.03601"
+           height="50"
+           width="50"
+           id="rect4732"
+           style="fill:#4d4d4d;fill-opacity:1;stroke:none" />
+        <rect
+           style="fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect4734"
+           width="39.898476"
+           height="39.898476"
+           x="641.08679"
+           y="-26.841282" />
+      </g>
+      <g
+         id="cmpPnlScrollBarVerticalGroup"
+         inkscape:label="#g4778">
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="cmpPnlScrollBarVerticalFrame"
+           d="m 635.27838,17.514615 50,0 0,149.999995 -50,0 z"
+           style="fill:#666666;fill-opacity:1;stroke:none"
+           inkscape:label="#rect4740" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#b3b3b3;fill-opacity:1;stroke:none"
+           d="m 645.27838,69.277283 30,0 0,45.220737 -30,0 z"
+           id="cmpPnlScrollBarVerticalBar"
+           inkscape:label="#path4743" />
+        <path
+           style="fill:#999999;fill-opacity:1;stroke:none"
+           d="m 645.27838,17.514615 30,0 0,50 -30,0 z"
+           id="cmpPnlScrollBarVerticalTopStop"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc"
+           inkscape:label="#path4745" />
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="cmpPnlScrollBarVerticalBottomStop"
+           d="m 645.27838,117.51461 30,0 0,50 -30,0 z"
+           style="fill:#999999;fill-opacity:1;stroke:none"
+           inkscape:label="#path4749" />
+      </g>
+    </g>
+    <rect
+       style="fill:url(#pattern4764);stroke:none"
+       width="50"
+       height="30"
+       x="-522.14496"
+       y="203.70119"
+       id="rect4770" />
+  </g>
+</svg>

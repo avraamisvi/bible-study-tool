@@ -1,0 +1,23 @@
+<div id="pianoRollWindowPanel" class="panel-external-body-color">
+
+    <div id="pianoRollToolBar">
+      <div id="pianoRollToolBarSpace"></div>
+
+      <div id="pianoRollButtonWrite" class="piano-roll-toolbar-button-write" onclick="pianoRollView.toggleModeEdition()"></div>
+
+      <div id="pianoRollButtonDelete" class="piano-roll-toolbar-button-delete" onclick="pianoRollView.toggleModeDeletion()"></div>
+    </div>
+
+    <div id="pianoRollHorizontalScroolBar">
+      <!--div id="pianoRollHorizontalBarDragger"></div-->
+      <input type="range" id="pianoRollHorizontalBarDragger" onwheel="pianoRollView.horizontalBarWheel(event)" oninput="pianoRollView.horizontalBarChange()" value="0">
+    </div>
+
+    <div id="pianoRollContent">
+          <div id="pianoRollVerticalScroolBar">
+            <!--div id="pianoRollVerticalBarDragger"></div-->
+            <input type="range" id="pianoRollVerticalBarDragger" onwheel="pianoRollView.verticalBarWheel(event)" oninput="pianoRollView.verticalBarChange()" value="0">
+          </div>
+          <canvas id="pianoRollCanvas" width="100" height="100">
+    </div>
+</div>

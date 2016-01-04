@@ -1,0 +1,11 @@
+<div class="modal-change-instrument-options-subpanel">
+
+  {% if instrumentValue == 1 %}
+    <input type="checkbox" id="checkbox_{{control.option}}" checked="checked">{{ control.label }}
+  {% endif %}
+
+  {% if instrumentValue == 0 %}
+    <input type="checkbox" id="checkbox_{{control.option}}">{{ control.label }}
+  {% endif %}
+
+</div>

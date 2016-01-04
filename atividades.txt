@@ -1,0 +1,32 @@
+Funcionalidades:
+
+dialogo para configurar as cores e velocidade das notas do instrumento no loop.
+propriedades dos instrumentos dinamica.
+dialogos de mensagem e erro.
+
+dialogo de carregamento da aplicação.
+menu salvar, editar, abrir projeto.
+dialogo propriedades do projeto
+campo aumentar tempo do projeto.
+
+{
+equalizador. (mixer)
+tela de efeitos, ou seja, um tela onde todos os instrumentos são apresentados e um canal pode ser conectado em outro
+}
+
+mute para o TrackLine (apenas mute ou nao)
+
+revisar design
+
+Fix:
+
+ajustar drag dos dialogos para serem apenas pelas barras.
+corrigir quando movimentando o pianoroll pelo top esta colocando o board deslocado.
+corrigir o cursor do piano roll para começar quando o trackitem for ser tocado.
+ajustar inicio e fim do trackitem quando for ser tocado, esta desregulado, tocando alem do que deve se começar depois de zero.
+
+
+Feitas:
+
+controle de amplitude do instrumento. OK
+dialogo para configurar notas no instrumento. OK

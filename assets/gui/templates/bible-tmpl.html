@@ -1,0 +1,6 @@
+{% for key, verse in chapter.verses %}
+<div id="bible-verse-{{key}}">
+    <div class="bible-verse-number" id="bible-verse-{{chapter-number}}-{{key}}">{{key}}</div>
+    <div class="bible-verse-text" id="bible-verse-text-{{chapter-number}}-{{key}}">{{parseVerse(verse.text)}}</div>
+</div>
+{% endfor %}

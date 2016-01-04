@@ -1,0 +1,26 @@
+<div id="compositionWindowPanel" class="panel-external-body-color">
+
+    <div id="compositionToolBar">
+      <div id="compositionToolBarSpace"></div>
+
+      <div id="compositionButtonWrite" class="composition-toolbar-button-write" onclick="compositionView.toggleModeEdition()"></div>
+
+      <div id="compositionButtonDelete" class="composition-toolbar-button-delete" onclick="compositionView.toggleModeDeletion()"></div>
+
+      <div id="compositionButtonAddGroup" class="composition-toolbar-button-add" onclick="compositionView.createGroup()"></div>
+      <div id="compositionButtonAddGroup" class="composition-toolbar-button-sub" onclick="compositionView.removeGroup()"></div>
+    </div>
+
+    <div id="compositionHorizontalScroolBar">
+      <!--div id="compositionHorizontalBarDragger"></div-->
+      <input type="range" id="compositionHorizontalBarDragger" onwheel="compositionView.horizontalBarWheel(event)" oninput="compositionView.horizontalBarChange()" value="0">
+    </div>
+
+    <div id="compositionContent">
+          <div id="compositionVerticalScroolBar">
+            <!--div id="compositionVerticalBarDragger"></div-->
+            <input type="range" id="compositionVerticalBarDragger" onwheel="compositionView.verticalBarWheel(event)" oninput="compositionView.verticalBarChange()" value="0">
+          </div>
+          <canvas id="compositionCanvas" width="100" height="100">
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div id="piano-roll-board-container"></div>
+
+<div id="piano-roll-seconds-container"></div>
+
+<div id="piano-roll-notes-container-labels">
+  {% for note in notes %}
+    <div id="piano-roll-key-{{note.id}}" data-note="{{note.id}}" class="piano-roll-key">
+      {% if note.half %}
+        <div id="piano-roll-key-label-{{note.id}}" class="piano-roll-key-label black"></div>
+      {% else %}
+        <div id="piano-roll-key-label-{{note.id}}" class="piano-roll-key-label">{{note.name}}</div>
+      {% endif %}
+
+    </div>
+  {% endfor %}
+</div>
+
+<div id="piano-roll-internal-container-separator"></div>
+
+<div id="scroolbar-horizontal-frame-{{id}}" class="scroolbar-horizontal-frame">
+  <div id="scroolbar-horizontal-bar-{{id}}" class="scroolbar-horizontal-bar"></div>
+</div>
+
+<div id="scroolbar-vertical-frame-{{id}}" class="scroolbar-vertical-frame">
+  <div id="scroolbar-vertical-bar-{{id}}" class="scroolbar-vertical-bar"></div>
+</div>
+
+<div id="piano-roll-toolbar" class="toolbar">
+  <div id="piano-roll-dragger"></div>
+  <div id="piano-roll-toolbar-button-menu" class="mini-toolbar-button button-effect"><i class="material-icons md-18">dehaze</i></div>
+  <div id="piano-roll-toolbar-button-write-mode" class="mini-toolbar-button"><i class="material-icons md-18">edit</i></div>
+  <div id="piano-roll-toolbar-button-delete-item" class="mini-toolbar-button button-effect"><i class="material-icons md-18">delete</i></div>
+
+  <div id="piano-roll-toolbar-label" class="piano-roll-toolbar-label">
+    <div id="piano-roll-toolbar-label-separator" class="piano-roll-toolbar-label-separator"></div>
+    <div id="piano-roll-toolbar-label-text" class="piano-roll-toolbar-label-text"> Piano Roll </div>
+  </div>
+</div>

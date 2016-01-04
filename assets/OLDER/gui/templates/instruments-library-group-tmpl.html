@@ -1,0 +1,27 @@
+<div id="instruments-library-group-panel-{{id}}" class="instruments-library-group-panel">
+  <div id="instruments-library-group-header-{{id}}" class="instruments-library-group-header">
+    <div id="instruments-library-group-header-text-{{id}}" class="instruments-library-group-header-text">{{group.label}}</div>
+  </div>
+
+  <div id="instruments-library-group-body-{{id}}" class="instruments-library-group-body" style="height:0px;">
+
+    {% for itmId, instrument in group.instruments %}
+      <div id="instruments-library-group-item-{{itmId}}" class="instruments-library-group-item">
+
+        <div id="instruments-library-group-item-button-{{itmId}}"
+        class="instruments-library-group-item-button button-effect"
+        name="instruments-library-group-item-button-{{id}}"
+
+        instrumentid="{{itmId}}"
+        instrumentlabel="{{instrument.name}}"
+        >
+
+        <i class="material-icons md-18">add_circle</i></div>
+
+        <div id="instruments-library-group-item-text-{{itmId}}" class="instruments-library-group-item-text">{{instrument.name}}</div>
+
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
