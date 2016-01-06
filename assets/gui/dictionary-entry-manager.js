@@ -7,13 +7,10 @@ var DictionaryEntryManager = BaseClass.extend({
   dictionary: null, //dicionario default
   current: null,
 
-  constructor: function(dict, code) {
-    this.element = $("#footer");
+  constructor: function(dict, code, word) {
+    this.element = $("#dictionary-entry");
     this.dictionary = dict;
-    this.current = this.dictionary.get(code);
-
-    console.log(this.current);
-    console.log(this.current.lemma);
+    this.current = this.dictionary.get(code, word);
 
     this.load();
   },
@@ -24,8 +21,13 @@ var DictionaryEntryManager = BaseClass.extend({
     }));
   },
 
-  show: function() {
+  show: function(code, word) {
 
+    this.current = this.dictionary.get(code, word);
+
+    this.element.html(nunjucks.render(__dirname + '/templates/dictionary-tmpl.html', {
+      entry: this.current
+    }));
   }
 
 });

@@ -7,8 +7,11 @@
 </div>
 
 <div id="bible-text">
+
+  {{source.name}}
+
   {% for verse in chapter.verses %}
-  <div id="bible-verse-{{verse.number}}">
+  <div class="bible-verse" id="bible-verse-{{verse.number}}">
       <div class="bible-verse-number" id="bible-verse-{{chapter-number}}-{{verse.number}}">{{verse.number}}</div>
       <div class="bible-verse-text" id="bible-verse-text-{{chapter-number}}-{{verse.number}}">{{parseVerse(verse.text)}}</div>
   </div>

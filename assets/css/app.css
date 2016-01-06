@@ -14,7 +14,7 @@ html, body
 }
 
 #bible-indice {
-  width: 30%;
+  width: 20%;
   height: 100%;
   float: left;
   border-right: thin solid;
@@ -22,7 +22,7 @@ html, body
 }
 
 #bible-text {
-  width: 70%;
+  width: 80%;
   box-sizing: border-box;
   height: 100%;
   float: left;
@@ -50,10 +50,34 @@ html, body
 #footer {
   border-top: thin solid;
   position: absolute;
-  height: 100px;
+  height: 150px;
   width: 100%;
   bottom: 0px;
+}
+
+#toolbar {
+  height: 45px;
+  width: 100%;
+  background-color: snow;
+  border-bottom: solid thin;
+  box-sizing: border-box;
+}
+
+#dictionary-entry {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
   background-color: cornsilk;
+}
+
+
+#comentary-entry {
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  background-color: snow;
 }
 
 .word-not-in-original {
@@ -68,4 +92,19 @@ html, body
 .bible-book-name:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.bible-verse-number {
+  float: left;
+  margin-right: 5px;
+}
+
+.bible-verse-number:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bible-verse {
+  margin-left: 5px;
+  margin-top: 3px;
 }

@@ -2,6 +2,8 @@ var BaseClass = require('base-class-extend');
 var StrongLexicon = require('../gui/strong-lexicon.js');
 var BibleViewer = require('../gui/bible-viewer.js');
 var DictionaryEntryManager = require("../gui/dictionary-entry-manager.js");
+var RightManager = require("../gui/right-manager.js");
+
 var BrowserWindow = require('electron').remote.BrowserWindow;
 
 var Workspace = BaseClass.extend({
@@ -9,6 +11,7 @@ var Workspace = BaseClass.extend({
   DEFAULT_MODULE_DIR: "/home/abraao/desenvolvimento/projetos/estudos/bible/modules/",
   dictionary: null, //dicionario default
   dictionaryManager: null,
+  rightMenu: null,
 
   constructor: function() {
 
@@ -20,6 +23,7 @@ var Workspace = BaseClass.extend({
   load: function() {
     this.dictionary = new StrongLexicon();
     this.dictionary.load();
+    this.rightMenu = new RightManager();
 
     this.openModule("bible-byz-port");//TODO remover
   },
@@ -62,9 +66,9 @@ var Workspace = BaseClass.extend({
     console.log(this.dictionary.get(code));
   }*/
 
-  showDictionaryEntry: function(code) {
+  showDictionaryEntry: function(code, word) {
     if(this.dictionaryManager) {
-      this.dictionaryManager.show();
+      this.dictionaryManager.show(code, word);
     } else {
       this.dictionaryManager = new DictionaryEntryManager(this.dictionary, code);
     }

@@ -1,7 +1,7 @@
 var BaseClass = require('base-class-extend');
 var fs = require('fs');
 
-var StrongLexicon = BaseClass.extend({
+var StrongLexicon = BaseClass.extend({//TODO mudar para Dictionary
 
   greek: null,
 
@@ -23,7 +23,7 @@ var StrongLexicon = BaseClass.extend({
     //console.log(this.greek);
   },
 
-  get: function(code) {
+  get: function(code, word) {
     return this.greek[code];
   }
 

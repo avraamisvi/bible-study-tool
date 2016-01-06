@@ -20,7 +20,7 @@ var BibleViewer = BaseClass.extend({
 
     this.element.html(nunjucks.render(__dirname + '/templates/bible-tmpl.html', {
       chapter: chapter_content,
-      source: this.source, 
+      source: this.source,
       parseVerse: this.parseVerse
     }));
 
@@ -37,7 +37,7 @@ var BibleViewer = BaseClass.extend({
           item = items[i];
           item = item.split("#");
 
-          result = '<span onclick="workspace.showDictionaryEntry(\''+item[1]+'\');" class="word-dictionary-ref" data-dictionary-number="' + item[1] + '">' + item[0] + '</span>';
+          result = '<span onclick="workspace.showDictionaryEntry(\''+item[1]+'\', \''+item[0]+'\');" class="word-dictionary-ref" data-dictionary-number="' + item[1] + '">' + item[0] + '</span>';
 
           text = text.replace(items[i], result);
         }
