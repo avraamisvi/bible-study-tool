@@ -4,7 +4,8 @@ var fs = require('fs');
 var StrongLexicon = BaseClass.extend({//TODO mudar para Dictionary
 
   greek: null,
-
+  name: "Strong",
+  
   constructor: function() {
 
   },

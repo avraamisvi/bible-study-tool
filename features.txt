@@ -1,0 +1,19 @@
+######## early-alpha version
+
+ - open modules (bibles and books)
+    - alow module navigation
+ - show words definition in the original languages
+ - list modules with label and icon. (with pagination)
+ - download new modules
+    - new window to list new modules and source and download modules.
+ - adjust the design.
+ - toolbar (title, buttons [download modules], )
+
+######## alpha version
+
+ - search engine
+
+######## beta version
+
+ - search engine
+ - accept crosswire formats?

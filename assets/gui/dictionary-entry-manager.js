@@ -7,27 +7,29 @@ var DictionaryEntryManager = BaseClass.extend({
   dictionary: null, //dicionario default
   current: null,
 
-  constructor: function(dict, code, word) {
-    this.element = $("#dictionary-entry");
+  constructor: function(x, y, dict, code, word) {
+    this.element = $("#body");
     this.dictionary = dict;
-    this.current = this.dictionary.get(code, word);
 
-    this.load();
+    this.show(x, y, code, word);
   },
 
-  load: function() {
-    this.element.html(nunjucks.render(__dirname + '/templates/dictionary-tmpl.html', {
-      entry: this.current
-    }));
-  },
+  show: function(x, y, code, word) {
 
-  show: function(code, word) {
+    $("#dictionary-entry").remove();//se existe remove
 
     this.current = this.dictionary.get(code, word);
 
-    this.element.html(nunjucks.render(__dirname + '/templates/dictionary-tmpl.html', {
-      entry: this.current
+    this.element.append(nunjucks.render(__dirname + '/templates/dictionary-tmpl.html', {
+      entry: this.current,
+      code: code,
+      dictionaryName: this.dictionary.name
     }));
+
+    $("#dictionary-entry").css({
+      top: y,
+      left: x
+    });
   }
 
 });

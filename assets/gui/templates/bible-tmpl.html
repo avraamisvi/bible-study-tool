@@ -8,7 +8,11 @@
 
 <div id="bible-text">
 
-  {{source.name}}
+  <div>Version - {{source.name}}</div>
+  <div>Book - {{bookSelected.name}}</div>
+  <div>chapter - {{chapter.number}}</div>
+
+  <br clear="all">
 
   {% for verse in chapter.verses %}
   <div class="bible-verse" id="bible-verse-{{verse.number}}">

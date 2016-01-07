@@ -3,7 +3,7 @@ var StrongLexicon = require('../gui/strong-lexicon.js');
 var BibleViewer = require('../gui/bible-viewer.js');
 var DictionaryEntryManager = require("../gui/dictionary-entry-manager.js");
 var RightManager = require("../gui/right-manager.js");
-
+var ModulesManager = require("../gui/modules-manager.js");
 var BrowserWindow = require('electron').remote.BrowserWindow;
 
 var Workspace = BaseClass.extend({
@@ -12,6 +12,7 @@ var Workspace = BaseClass.extend({
   dictionary: null, //dicionario default
   dictionaryManager: null,
   rightMenu: null,
+  modulesManager: null,
 
   constructor: function() {
 
@@ -21,19 +22,20 @@ var Workspace = BaseClass.extend({
   },
 
   load: function() {
+    this.modulesManager = new ModulesManager();
     this.dictionary = new StrongLexicon();
     this.dictionary.load();
-    this.rightMenu = new RightManager();
+    //this.rightMenu = new RightManager();
 
-    this.openModule("bible-byz-port");//TODO remover
+    //this.openModule("bible-byz-port");//TODO remover
+
+    $(window).click(function(ev){
+      workspace.removeFloatDialogs();
+    });
   },
 
-  openModule: function(name) {
-    var module = require(this.DEFAULT_MODULE_DIR + name + "/mod.js");
-
-    if(module.type == "bible") {
-      new BibleViewer(module);
-    }
+  removeFloatDialogs: function() {
+    $("#dictionary-entry").remove();
   },
 
   /*openDictionary: function(code) {
@@ -66,11 +68,14 @@ var Workspace = BaseClass.extend({
     console.log(this.dictionary.get(code));
   }*/
 
-  showDictionaryEntry: function(code, word) {
+  showDictionaryEntry: function(event, code, word) {
+
+    event.stopImmediatePropagation();
+
     if(this.dictionaryManager) {
-      this.dictionaryManager.show(code, word);
+      this.dictionaryManager.show(event.clientX, event.clientY, code, word);
     } else {
-      this.dictionaryManager = new DictionaryEntryManager(this.dictionary, code);
+      this.dictionaryManager = new DictionaryEntryManager(event.clientX, event.clientY, this.dictionary, code);
     }
   }
 });

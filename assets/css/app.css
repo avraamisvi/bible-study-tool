@@ -19,6 +19,7 @@ html, body
   float: left;
   border-right: thin solid;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 #bible-text {
@@ -26,6 +27,7 @@ html, body
   box-sizing: border-box;
   height: 100%;
   float: left;
+  overflow-y: scroll;
 }
 
 #main {
@@ -45,6 +47,7 @@ html, body
   width: 20%;
   float: left;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 
 #footer {
@@ -63,14 +66,52 @@ html, body
   box-sizing: border-box;
 }
 
-#dictionary-entry {
-  width: 30%;
-  height: 100%;
+#button-library:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#button-annot:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#button-writings:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.module-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dictionary-body {
+  margin-left: 5px;
+}
+
+.dictionary-entry {
+  width: 250px;
+  height: 200px;
   box-sizing: border-box;
   float: left;
   background-color: cornsilk;
+  position: absolute;
+  overflow: scroll;
+  border: solid thin;
 }
 
+.dictionary-choose {
+  height: 25px;
+  width: 100%;
+  border-bottom: solid thin;
+  margin-bottom: 5px;
+}
+
+.dictionary-choose:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 #comentary-entry {
   width: 70%;
