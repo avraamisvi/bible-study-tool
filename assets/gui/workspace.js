@@ -8,7 +8,7 @@ var BrowserWindow = require('electron').remote.BrowserWindow;
 
 var Workspace = BaseClass.extend({
 
-  DEFAULT_MODULE_DIR: "/home/abraao/desenvolvimento/projetos/estudos/bible/modules/",
+  //DEFAULT_MODULE_DIR: "~/development/projetos/javascript/bible/modules/",
   dictionary: null, //dicionario default
   dictionaryManager: null,
   rightMenu: null,
@@ -23,6 +23,8 @@ var Workspace = BaseClass.extend({
 
   load: function() {
     this.modulesManager = new ModulesManager();
+    this.modulesManager.show();
+
     this.dictionary = new StrongLexicon();
     this.dictionary.load();
     //this.rightMenu = new RightManager();

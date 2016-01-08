@@ -15,7 +15,7 @@ var BibleViewer = BaseClass.extend({
 
   openChapter: function(book, chap) {
 
-    chapter_file = workspace.DEFAULT_MODULE_DIR + this.source.id + "/" + book + "/" + this.source.books[book].chapters[chap].file;
+    chapter_file = workspace.modulesManager.DEFAULT_MODULE_DIR + this.source.id + "/" + book + "/" + this.source.books[book].chapters[chap].file;
     var chapter_content = JSON.parse(fs.readFileSync(chapter_file, 'utf8'));
 
     this.element.html(nunjucks.render(__dirname + '/templates/bible-tmpl.html', {
