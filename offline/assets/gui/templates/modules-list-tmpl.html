@@ -1,0 +1,7 @@
+<div id="module-indice">
+  {% for module in modules %}
+  <div id="module-{{module}}">
+      <div class="module-name" id="module-name-{{module}}" onclick="workspace.modulesManager.openModule('{{module}}')">{{getModuleLabel(module)}}</div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,51 @@
+#messageErrorPanel {
+  position: absolute;
+  height: 150px;
+  width: 550px;
+  z-index: 9999;
+  background-color: rgb(63, 68, 74);
+  bottom: 5px;
+  border-bottom-right-radius: 180px;
+  border-top-right-radius: 180px;
+}
+
+#messageErrorPanelTitle{
+  width: 100%;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+#messageErrorPanelMessage {
+  height: 80%;
+  width: 90%;
+  padding: 15px;
+  overflow: auto;
+  font-size: 15px;
+}
+
+#messageInfoPanel {
+  position: absolute;
+  height: 150px;
+  width: 550px;
+  z-index: 9999;
+  background-color: rgb(63, 68, 74);
+  top: 5px;
+  border-bottom-right-radius: 180px;
+  border-top-right-radius: 180px;
+}
+
+#messageInfoPanelTitle{
+  width: 100%;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+#messageInfoPanelMessage {
+  height: 80%;
+  width: 90%;
+  padding: 15px;
+  overflow: auto;
+  font-size: 15px;
+}

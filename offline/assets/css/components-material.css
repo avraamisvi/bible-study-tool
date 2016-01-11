@@ -1,0 +1,187 @@
+/**
+  Generic component styles
+*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+/*COMPONENTS*/
+
+.toolbar {
+  border: 1px solid #3F51B5;
+  background-color: #3F51B5;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 1px 8px rgba(0,0,0,.28);/*0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);*/
+}
+
+.mini-toolbar-button {
+  height: 20px;
+  width: 25px;
+  margin-top: 2px;
+  float: left;
+  border: 1px solid #3F51B5;
+  background-color: #3F51B5;
+  margin-left: 6px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 3px;
+}
+
+.mini-toolbar-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 8px 1px rgba(26,255,101,1);
+  border-radius: 50%;
+}
+
+.mini-toolbar-button-down {
+  background-color: #7986CB;
+  color: #283593;
+  border-radius: 5px;
+}
+
+.scroolbar-horizontal-frame {
+  position: absolute;
+  height: 15px;
+  width: 200px;
+  background-color: #1A237E;
+  border: 1px solid #1A237E;
+  overflow: hidden;
+  box-sizing:border-box;
+}
+
+.scroolbar-horizontal-bar {
+  height: 10.5px;
+  background-color: #3F51B5;
+  width: 100px;
+  position: absolute;
+  border: 1px solid #3F51B5;
+  box-sizing:border-box;
+  border-radius: 10px;
+}
+
+.scroolbar-horizontal-button-left {
+    width: 30px;
+    height: 15px;
+    color: #BBBBBB;
+    background-color: #3F51B5;
+    position: absolute;
+    border: 1px solid #3F51B5;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 8px;
+    font-family: monospace;
+    border-right-color: #272C4E;
+    box-sizing:border-box;
+}
+
+.scroolbar-horizontal-button-right {
+  width: 30px;
+  height: 15px;
+  color: #BBBBBB;
+  background-color: #3F51B5;
+  position: absolute;
+  border: 1px outset #3F51B5;
+  text-align: center;
+  padding-top: 0px;
+  font-size: 8px;
+  font-family: monospace;
+  border-left-color: #272C4E;
+  box-sizing:border-box;
+}
+
+.scroolbar-vertical-button-top {
+    width: 15px;
+    height: 30px;
+    color: #BBBBBB;
+    background-color: #3F51B5;
+    position: absolute;
+    border: 1px solid #3F51B5;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 12px;
+    border-bottom-color: #272C4E;
+    box-sizing:border-box;
+}
+
+.scroolbar-vertical-button-bottom {
+    width: 15px;
+    height: 30px;
+    color: #BBBBBB;
+    background-color: #3F51B5;
+    position: absolute;
+    border: 1px outset #3F51B5;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 12px;
+    border-top-color: #272C4E;
+    box-sizing:border-box;
+}
+
+.scroolbar-vertical-frame {
+    height: 200px;
+    width: 15px;
+    position: absolute;
+    background: #1A237E;
+    left: 201px;
+    border: 1px solid #1A237E;
+    box-sizing:border-box;
+    z-index: 2;
+}
+
+.scroolbar-vertical-bar{
+  height: 40px;
+  background-color: #3F51B5;
+  width: 10.5px;
+  position: absolute;
+  border: 1px outset #3F51B5;
+  box-sizing:border-box;
+  border-radius: 10px;
+}

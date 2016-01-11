@@ -1,0 +1,1017 @@
+/**
+  Specific component styles
+*/
+
+@font-face {
+  font-family: 'Digital dream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/led/DIGITALDREAM.ttf')  format('truetype');
+}
+
+div {
+  -webkit-user-select: none;
+}
+
+#main-control-panel {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+}
+
+#main-control-panel-buttons {
+  float: left;
+  height: 100%;
+}
+
+#seconds-display-border {
+  background-color: #3F51B5;
+  padding: 5px;
+  border-right: solid thin #1A237E;
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: linear-gradient(to left, rgba(26,35,126,0.5) 0%,#3F51B5 100%);
+  border-radius: 25px;
+  position: relative;
+  /* z-index: -1; */
+  /* left: -40px; */
+}
+
+.main-control-button {
+  height: 50%;
+  background-color: #444444;
+  width: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px 1px #171717 inset;
+}
+.main-control-button-icon {
+  margin-top: 3px;
+}
+
+.main-control-button:hover {
+  box-shadow: 0px 0px 8px 1px rgba(26,255,101,1) inset;
+}
+
+#seconds-display {
+  font-family: 'Digital dream';
+  background-color: #5E8681;
+  padding: 10px;
+  width: 130px;
+  text-align: center;
+  border: solid thin #263067;
+  font-size: larger;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  position: relative;
+  left: -3px;
+}
+
+#music-graphic {
+  border: solid thin #1A237E;
+  background-color: #283593;
+  height: 100%;
+  width: 10px;
+  float: left;
+  margin-left: 1px;
+  display: none;
+}
+
+#piano-roll-toolbar {
+  height: 28px;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  border-top-color: #1A237E;
+  border-top-style: solid;
+  border-top-width: thin;
+}
+
+#contentComposition{
+  overflow: hidden;
+  background: #283593;
+  position: relative;
+  z-index: 9;
+}
+
+#composition-toolbar {
+  height: 28px;
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+}
+
+#composition-internal-container-separator {
+  width: 200px;
+  height: 50px;
+  background: #3F51B5;
+  position: absolute;
+  border: 1px solid #3F51B5;
+  border-right-color: #272C4E;
+}
+
+#composition-seconds-container{
+  width: 1000px;
+  height: 50px;
+  background: #1A237E;
+  position: absolute;
+  border: 1px solid #172061;
+}
+
+#composition-internal-container{
+  height: 100px;
+  width: 1000px;
+  position: absolute;
+  background: blueviolet;
+}
+
+#composition-track-container-labels{
+  width: 200px;
+  height: 50px;
+  /*background: blue;*/
+  position: absolute;
+}
+
+#composition-track-container {
+  position: absolute;
+  background-color:#269;
+}
+
+#border-separator-content2{
+  position: absolute;
+    width: 2px;
+    height: 100%;
+    cursor: ew-resize;
+    /*background-color: #3F51B5;*/
+    z-index: 11;
+    /*border-left: thin solid #283593;
+    border-right: thin solid #283593;*/
+}
+
+#instrument-panel-toolbar{
+  height: 28px;
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+#instrument-panel{
+  position: absolute;
+  width: 100%;
+}
+
+#instruments-library-panel-toolbar{
+  height: 28px;
+  width: 100%;
+  margin-bottom: 5px;
+  /*position: relative;*/
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+
+.composition-track {
+    width: 1000px;
+    height: 50px;/
+    background-color: #3F51B5;
+    background-image: linear-gradient(rgba(0,0,0,0) 1px, transparent 2px), linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px), linear-gradient(rgba(0,0,0,.3) 0px, transparent 0px), linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    position: relative;
+
+    border-bottom-color: #272C4E;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+.composition-track-label {
+    width: 200px;
+    height: 49px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.65);
+    border: 1px solid #00796B;
+    background: #00796B;
+    border-right-color: #04231F;
+    border-bottom-style: none;
+    position: relative;
+
+    border-bottom-color: #272C4E;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+/*track label colors*/
+
+.composition-track-label-color1{
+  background-color: rgba(2,136,209,1) !important;/*700*/
+  border-color: rgba(2,136,209,1);
+}
+
+.composition-track-label-transp-color1{
+  background-color: rgba(2,136,209,0.64) !important;/*700*/
+}
+
+.track-label-text-color1 {
+  background-color: #03A9F4 !important;/*500*/
+}
+
+.composition-track-label-color2{
+  background-color: rgba(56,142,60,1) !important;/*700*/
+  border-color: rgba(56,142,60,1);
+}
+
+.composition-track-label-transp-color2{
+  background-color: rgba(56,142,60,0.64) !important;/*700*/
+}
+
+.track-label-text-color2 {
+  background-color: #4CAF50 !important;/*500*/
+}
+
+.composition-track-label-color3{
+  background-color: rgba(123,31,162,1) !important;/*700*/
+  border-color: rgba(123,31,162,1);
+}
+
+.composition-track-label-transp-color3{
+  background-color: rgba(123,31,162,0.64) !important;/*700*/
+}
+
+.track-label-text-color3 {
+  background-color: #9C27B0 !important;/*500*/
+}
+
+/*fim track label colors*/
+
+.track-label-text {
+  padding: 5px;
+  background: #009688;
+  overflow: hidden;
+  height: 15px;
+}
+
+.track-label-text-content {
+  overflow: hidden;
+  height: 100%;
+  width: 90%;
+}
+
+.track-label-text-border-bottom{
+  width: 100%;
+  height: 1px;
+  background: rgba(0,0,0,0.55);
+}
+
+.track-second{
+  position: absolute;
+}
+
+.seconds-vertical-line{
+  height: 35px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+
+.track-line-item {
+  background-color: rgba(77, 182, 172, 0.64);
+  width: 100px;
+  height: 46px;
+  position: absolute;
+  top: 2px;
+  border-radius: 2px;
+}
+
+.track-line-item-label-header {
+  width: 100%;
+  background: #009688;
+}
+
+.track-line-item-label-delete-button{
+  position: absolute;
+  top: 3px;
+  left: 175px;
+  height: 22px;
+  width: 24px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.track-line-item-label-delete-button:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.track-line-item-label-header-text {
+  padding: 1px;
+  margin-left: 4px;
+  overflow: hidden;
+}
+
+.track-line-item-anchor-right{
+  /*background-color: black;*/
+  height:100%;
+  width: 5px;
+  position:absolute;
+  cursor: e-resize;
+  top: 0px;
+}
+
+.track-line-item-label {
+  width: 100%;
+  position:relative;
+  float:left;
+  overflow: hidden;
+}
+
+.track-second-text{
+  left: -22px;
+  position: absolute;
+  top: 4px;
+}
+
+/*track lines*/
+
+.track-line-item-selected {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #97FF44;
+}
+
+/*composition toolbar*/
+
+.composition-toolbar-button-write-mode-up {
+  background-image: url(icons/glyphicons-31-pencil.png);
+  height: 22px;
+  width: 24px;
+  margin-top:2px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  float:left;
+  background-position-y: 2px;
+  background-position-x: 2px;
+  border: 1px outset gray;
+  background-color: #5f686d;
+  margin-left: 2px;
+}
+
+.composition-toolbar-button-write-mode-down {
+  background-image: url(icons/glyphicons-31-pencil.png);
+  height: 22px;
+  width: 24px;
+  margin-top:2px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  float:left;
+  background-position-y: 2px;
+  background-position-x: 2px;
+  border: 1px inset gray;
+  background-color: #A9FFA9;
+  margin-left: 2px;
+}
+
+/*INSTRUMENTOS*/
+
+.instrument-item-loop{
+  position: absolute;
+  height: 80%;
+  left: 140px;
+  top: 5px;
+  width: 400px;
+}
+
+.instrument-item-piano-seq{
+  position: absolute;
+  height: 80%;
+  left: 140px;
+  top: 2px;
+  width: 300px;
+  display: none;
+  border: thin solid #1A237E;
+  background-color: #283593;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.instrument-item-loop-panel {
+  width: 15px;
+  border: thin solid rgba(0,0,0,0.5);
+  height: 90%;
+  float: left;
+  margin-right: 4px;
+  border-radius: 25%;
+  box-sizing: border-box;
+}
+
+.instrument-item-piano-seq:hover {
+  box-shadow: 0px 0px 8px 1px rgba(5,255,232,1);
+}
+
+.instrument-item-loop-button{
+  width: 100%;
+  background-color: #808080;
+  height: 15px;
+  box-shadow: 0px 0px 8px 1px #000000 inset;
+  border: solid thin #1A237E;
+  box-sizing: border-box;
+  border-radius: 3px;
+  top: 15px;
+  position: relative;
+  overflow: hidden;
+  color: #A2A2A2;
+}
+
+.instrument-item-loop-button.selected {
+  background-color: #9C4A00;
+  box-shadow: 0px 0px 8px 1px #FF973B inset;
+}
+
+.instrument-item-loop-button-centered-text {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.instrument-item-loop-button-text-icon {
+  left: -2px;
+  top: 2px;
+  position: relative;
+  font-size: 15px !important;
+}
+
+.instrument-item-loop-seq {
+  width: 100%;
+  height: 20px;
+  box-shadow: 0px -5px 6px 0px rgba(53,74,72,1) inset;
+  background-color: #006F65;
+  border-radius: 25%;
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
+
+.instrument-item-loop-seq.second-color {
+  width: 100%;
+  height: 20px;
+  box-shadow: 0px -5px 6px 0px rgba(53,74,72,1) inset;
+  background-color: #6F6200;
+  border-radius: 25%;
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
+
+.instrument-item-loop-seq:hover {
+  border-color: lightgreen;
+}
+
+.instrument-item-loop-seq.selected {
+  /*box-shadow: 2px 2px 8px 1px rgba(255,255,255,0.75) inset;
+  background-color: #00E0CC;*/
+  box-shadow: 0px 0px 8px 1px rgba(5,255,232,1);
+  background-color: #00E0CC;
+}
+
+.instrument-item-loop-seq.second-color.selected {
+  box-shadow: 0px 0px 8px 1px rgb(204, 181, 0);
+  background-color: #BFAB00;
+}
+
+.instrument-item-loop-seq.selected:hover {
+  border-color: lightgreen;
+}
+
+.instrument-item-label{
+  height: 70%;
+  width: 85px;
+  border: 1px solid #1A237E;
+  position: absolute;
+  left: 40px;
+  text-align: center;
+  top: 5px;
+
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.75) inset;
+  background-color: #00796B;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.65);
+  border-radius: 5px;
+}
+
+.instrument-item-label:hover{
+  /*box-shadow: 0px 0px 8px 1px rgba(26,255,101,1);*/
+  border-color: lightgreen;
+}
+
+.instrument-item-label.selected{
+  /*box-shadow: 2px 2px 8px 1px rgba(255,255,255,0.45) inset;*/
+  box-shadow: 0px 0px 8px 1px rgba(26,255,101,1);
+  border-color: rgba(63,81,181,0.65);
+}
+
+
+.instrument-item-label.selected:hover{
+  /*box-shadow: 0px 0px 8px 1px rgba(26,255,101,1);*/
+  border-color: lightgreen;
+}
+
+.instrument-item-label-text{
+  margin-top: 8px;
+}
+
+.instrument-item-check{
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  color: #1A237E;
+}
+
+.instrument-item-check:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px -3px 8px 0px rgba(26,255,101,1);
+  border-radius: 50%;
+}
+
+.instrument-item-check.selected{
+  color:lightgreen;
+}
+
+.instrument-item-piano-check {
+  position: absolute;
+  top: 25px;
+  left: 8px;
+  color: #1A237E;
+}
+
+.instrument-item-piano-check.selected{
+  color:lightgreen;
+}
+
+.instrument-item-piano-check:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px -3px 8px 0px rgba(26,255,101,1);
+  border-radius: 50%;
+}
+
+
+.instruments-toolbar-label-separator {
+  height: 30px;
+  width: 200px;
+  position: absolute;
+  left: 10px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, rgba(26,35,126,0.5) 0%,#3F51B5 100%);
+}
+
+.instruments-library-toolbar-label-separator{
+  height: 30px;
+  width: 200px;
+  position: absolute;
+  left: 10px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, rgba(26,35,126,0.5) 0%,#3F51B5 100%);
+}
+
+.instrument-item-check.selected:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.instrument-item-panel {
+  position: relative;
+  height: 45px;
+  margin-bottom: 8px;
+  /*overflow: hidden;*/
+}
+
+.instruments-toolbar-label {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.instruments-toolbar-label-text {
+  margin-left: 25px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  font-size: 13px;
+  height: 100%;
+  padding-top: 6px;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.instruments-library-toolbar-label {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.instruments-library-toolbar-label-text {
+  margin-left: 25px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  font-size: 13px;
+  height: 100%;
+  padding-top: 6px;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.composition-toolbar-label {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.composition-toolbar-label-text {
+  margin-left: 25px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  font-size: 13px;
+  height: 100%;
+  padding-top: 6px;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.composition-toolbar-label-separator {
+  height: 30px;
+  width: 200px;
+  position: absolute;
+  left: 10px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, rgba(26,35,126,0.5) 0%,#3F51B5 100%);
+}
+
+.instruments-library-panel {
+  position: absolute;
+  width: 100%;
+}
+
+.instruments-library-group-header {
+  height: 25px;
+  background-color: #3F51B5;
+  border: #1A237E thin solid;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.65);
+}
+
+.instruments-library-group-header-text {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.instruments-library-group-item {
+  width: 100%;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.instruments-library-group-item-button {
+  margin-right: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.instruments-library-group-item-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px -3px 8px 1px rgba(26,255,101,1);
+  border-radius: 50%;
+}
+
+.instruments-library-group-item-text {
+  float: left;
+  margin-top: 3px;
+}
+
+.instruments-library-group-panel {
+  background-color: #1A237E;
+}
+
+.instruments-library-group-body{
+  overflow: hidden;
+}
+
+.instrument-notes-dialog {
+  left: 5px;
+  top: 45px;
+  width: 450px;
+  height: 125px;
+  background-color: #3F51B5;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 1px 8px rgba(0,0,0,.28);
+  border: thin solid #1A237E;
+  z-index: 1;
+}
+
+.instrument-notes-dialog-group-field{
+  margin: 8px;
+  width: 100%;
+  position: absolute;
+}
+
+.instrument-notes-dialog-panel {
+  border: thin solid #283593;
+  width: 440px;
+  height: 90px;
+  margin: 4px;
+  overflow: hidden;
+}
+
+.instrument-notes-dialog-note-panel{
+  position: relative;
+  width: 37px;
+  /*overflow: hidden;*/
+  float: left;
+  background-color: white;
+  height: 50px;
+  cursor: pointer;
+}
+
+.instrument-notes-dialog-note-panel.border{
+  border-right: solid thin rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.instrument-notes-notes-panel {
+  width: 450px;
+  height: 100%;
+  /*overflow: hidden;*/
+  top: 50px;
+  position: relative;
+  box-shadow: 0 -6px 8px rgba(0,0,0,.14),0 1px 8px rgba(0,0,0,.28);
+}
+
+.instrument-notes-dialog-note {
+  height: 100%;
+}
+
+.instrument-notes-dialog-note-note-text{
+  transform: rotate(90deg);
+  font-size: 10px;
+  color: rgb(82, 82, 82);
+  margin-top: 15px;
+  text-shadow: 1px 1px 1px rgb(136, 136, 136);
+}
+
+.instrument-notes-dialog-note-note-text.black{
+  background-color: black;
+  transform: rotate(0deg);
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to top, rgba(175,175,175,0.5) 0%,#000000 100%);
+}
+
+.instrument-notes-dialog-note-note-text-line{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 5%;
+  height: 15px;
+  top: -15px;
+  display: none;
+  position: relative;
+  left: 18px;
+}
+
+.instrument-notes-dialog-note-panel-check{
+  width: 55px;
+  height: 7px;
+  position: absolute;
+  top: -10px;
+  box-shadow: 0px 1px 8px 1px rgba(5,255,232,1);
+  background-color: #00E0CC;
+  display: none;
+}
+
+.instrument-notes-dialog-note-panel-check.black{
+  width: 37px;
+}
+
+/*----------pianoroll----------*/
+
+.piano-roll-toolbar-label {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.piano-roll-toolbar-label-text {
+  margin-left: 25px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  font-size: 13px;
+  height: 100%;
+  padding-top: 6px;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.piano-roll-toolbar-label-separator {
+  height: 30px;
+  width: 200px;
+  position: absolute;
+  left: 10px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, rgba(26,35,126,0.5) 0%,#3F51B5 100%);
+}
+
+#piano-roll-board-container {
+  position: absolute;
+  background-color: #283593;
+  box-sizing: border-box;
+  width: 100px;
+}
+
+#piano-roll-internal-container-separator {
+  width: 100px;
+  height: 50px;
+  background: #3F51B5;
+  position: absolute;
+  border: 1px solid #3F51B5;
+  border-right-color: #272C4E;
+  box-sizing: border-box;
+}
+
+#piano-roll-seconds-container{
+  width: 1000px;
+  height: 50px;
+  background: #1A237E;
+  position: absolute;
+  border: 1px solid #172061;
+  box-sizing: border-box;
+}
+
+#piano-roll-notes-container-labels{
+  width: 100px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+#piano-roll-dragger {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  cursor: ns-resize;
+  z-index: 9;
+}
+
+.piano-roll-item {
+  position: absolute;
+  height: 99%;
+  background-color: rgba(77, 182, 172, 0.64);
+  width: 100px;
+  border-radius: 2px;
+}
+
+.piano-roll-item.selected {
+  border-color: lightgreen;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: thin;
+  box-sizing: border-box;
+}
+
+.piano-roll-key {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  background-color: white;
+  border-bottom: #DEDEDE solid thin;
+  color: black;
+  box-sizing: border-box;
+}
+
+.piano-roll-key-label{
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 4px;
+  color: #565656;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  font-size: 10px;
+}
+
+.piano-roll-key-label.black{
+  text-align: right;
+  background-color: black;
+  width: 55%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(175,175,175,0.5) 0%,#000000 100%);
+}
+
+.piano-roll-track {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  border-top: #1A237E solid 1px;
+  border-right: #1A237E solid 1px;
+  color: black;
+  box-sizing: border-box;
+}
+
+.piano-roll-item-anchor-right{
+  height:100%;
+  width: 5px;
+  position:absolute;
+  cursor: e-resize;
+  top: 0px;
+}
+
+.cursor-progress {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(255, 0, 0, 0.45);
+  bottom: 0px;
+  box-shadow: 0 0 4px rgba(72,0,0,0),-2px 0px 8px rgba(255, 0, 0, 1);
+}
+
+.instrument-settings-dialog-body {
+  width: 380px;
+  border: thin solid #283593;
+  margin: 10px;
+  height: 95px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.instrument-settings-dialog {
+  width: 400px;
+  height: 135px;
+  position: absolute;
+  z-index: 101;
+  top: 0px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 1px 8px rgba(0,0,0,.28);
+  background-color: #3F51B5;
+  border: 1px solid #1A237E;
+}
+
+
+.instrument-amplitude-dialog-panel {
+  /*height: 120px;*/
+  background-color: #3F51B5;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: 5px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 1px 8px rgba(0,0,0,.28);
+  border-color: #283593;
+  border-style: solid;
+  border-width: thin;
+  z-index: 10;
+}
+
+.instrument-amplitude-dialog-body {
+  height: 110px;
+  background-color: 283593;
+  width: 40px;
+  margin: 5px;
+  border-color: #283593;
+  border-style: solid;
+  border-width: thin;
+  box-sizing: border-box;
+}
+
+.instrument-amplitude-dialog-slider-frame {
+  height: 104px;
+  background-color: #283593;
+  width: 10px;
+  margin-left: 14px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+.instrument-amplitude-dialog-slider-buttom {
+  height: 15px;
+  width: 15px;
+  background-color: #3F51B5;
+  position: absolute;
+  left: 17px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 1px 8px rgba(0,0,0,.28);
+  border-radius: 5px;
+  border-color: #1A237E;
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: thin;
+}
+
+.instrument-settings-dialog-slider-frame {
+  height: 104px;
+  background-color: #283593;
+  width: 10px;
+  margin-left: 14px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+.instrument-settings-dialog-slider-buttom {
+  height: 15px;
+  width: 15px;
+  background-color: #3F51B5;
+  position: absolute;
+  left: 17px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 1px 8px rgba(0,0,0,.28);
+  border-radius: 5px;
+  border-color: #1A237E;
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: thin;
+}

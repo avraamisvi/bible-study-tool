@@ -1,0 +1,23 @@
+<div id="bible-indice">
+  {% for key, book in source.books %}
+  <div id="bible-book-{{key}}">
+      <div class="bible-book-name" id="bible-name-{{key}}-{{source.id}}">{{book.name}}</div>
+  </div>
+  {% endfor %}
+</div>
+
+<div id="bible-text">
+
+  <div>Version - {{source.name}}</div>
+  <div>Book - {{bookSelected.name}}</div>
+  <div>chapter - {{chapter.number}}</div>
+
+  <br clear="all">
+
+  {% for verse in chapter.verses %}
+  <div class="bible-verse" id="bible-verse-{{verse.number}}">
+      <div class="bible-verse-number" id="bible-verse-{{chapter-number}}-{{verse.number}}">{{verse.number}}</div>
+      <div class="bible-verse-text" id="bible-verse-text-{{chapter-number}}-{{verse.number}}">{{parseVerse(verse.text)}}</div>
+  </div>
+  {% endfor %}
+</div>

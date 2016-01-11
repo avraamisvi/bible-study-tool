@@ -1,7 +1,7 @@
 <div id="bible-indice">
   {% for key, book in source.books %}
   <div id="bible-book-{{key}}">
-      <div class="bible-book-name" id="bible-name-{{key}}-{{source.id}}">{{book.name}}</div>
+      <div class="bible-book-name" id="bible-name-{{key}}-{{source.id}}" onclick="workspace.modulesManager.openBook('{{key}}', '{{source.id}}')">{{book.name}}</div>
   </div>
   {% endfor %}
 </div>

@@ -3,18 +3,14 @@ var path = require('path');
 var BaseClass = require('base-class-extend');
 //var nunjucks = require('nunjucks');
 var BibleViewer = require('../gui/bible-viewer.js');
-var OS = require('os');
 
 var ModulesManager = BaseClass.extend({
 
-  DEFAULT_MODULE_DIR: OS.homedir() + "/.bible-study-tools/modules/",
+  DEFAULT_MODULE_DIR: "/home/abraao/desenvolvimento/projetos/estudos/bible/modules/",
+  openedModules: {},
 
   constructor: function() {
-
-  },
-
-  show: function() {
-    this.load(this.getDirectories(this.DEFAULT_MODULE_DIR));
+    this.load(this.getDirectories(workspace.DEFAULT_MODULE_DIR));
   },
 
   getDirectories: function(srcpath) {
@@ -36,19 +32,22 @@ var ModulesManager = BaseClass.extend({
       var module = require(this.DEFAULT_MODULE_DIR + name + "/mod.js");
 
       if(module.type == "bible") {
-        new BibleViewer(module);
+        this.openedModules[name] = new BibleViewer(module);
       }
     } catch(ex) {
       alert("This module can not be opened.");
     }
   },
 
+  openBook: function(name, module) {
+    this.openedModules[module].openChapter(name, 1);
+  },
+
   getModuleLabel: function(module) {
     try {
-      var temp = require(window.workspace.modulesManager.DEFAULT_MODULE_DIR + "/" + module + "/mod.js");
+      var temp = require(workspace.DEFAULT_MODULE_DIR + "/" + module + "/mod.js");
       return temp.name;
     } catch(ex) {
-      console.error(ex);
       return module;
     }
 

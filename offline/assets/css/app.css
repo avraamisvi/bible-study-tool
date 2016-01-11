@@ -1,0 +1,151 @@
+html, body
+{
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: darkgray;
+    overflow:hidden;
+    margin:0px;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+}
+
+#bible-indice {
+  width: 20%;
+  height: 100%;
+  float: left;
+  border-right: thin solid;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+#bible-text {
+  width: 80%;
+  box-sizing: border-box;
+  height: 100%;
+  float: left;
+  overflow-y: scroll;
+}
+
+#main {
+  border-right: thin solid;
+  width: 80%;
+  height: 100%;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#right {
+  border-right: thin solid;
+  position: relative;
+  height: 100%;
+  background-color: azure;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+#footer {
+  border-top: thin solid;
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  bottom: 0px;
+}
+
+#toolbar {
+  height: 45px;
+  width: 100%;
+  background-color: snow;
+  border-bottom: solid thin;
+  box-sizing: border-box;
+}
+
+#button-library:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#button-annot:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#button-writings:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.module-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dictionary-body {
+  margin-left: 5px;
+}
+
+.dictionary-entry {
+  width: 250px;
+  height: 200px;
+  box-sizing: border-box;
+  float: left;
+  background-color: cornsilk;
+  position: absolute;
+  overflow: scroll;
+  border: solid thin;
+}
+
+.dictionary-choose {
+  height: 25px;
+  width: 100%;
+  border-bottom: solid thin;
+  margin-bottom: 5px;
+}
+
+.dictionary-choose:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#comentary-entry {
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  background-color: snow;
+}
+
+.word-not-in-original {
+  font-style: italic;
+}
+
+.word-dictionary-ref:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bible-book-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bible-verse-number {
+  float: left;
+  margin-right: 5px;
+}
+
+.bible-verse-number:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bible-verse {
+  margin-left: 5px;
+  margin-top: 3px;
+}

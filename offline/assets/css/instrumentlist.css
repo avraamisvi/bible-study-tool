@@ -1,0 +1,72 @@
+.instrument-list-item{
+  width: 100%;
+  height: 15px;
+  overflow: hidden;
+}
+
+.instrument-list-item-label{
+  overflow: hidden;
+  float:left;
+}
+
+.instrument-list-category {
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  /*border-style: solid;
+  border-width: 1px;
+  border-color: rgb(88, 99, 105);*/
+}
+
+.instrument-list-category-label {
+  text-align: left;
+  padding-left: 4px;
+  padding-top: 3px;
+  color: white;
+  width: 95%;
+  height: 20px;
+  overflow: hidden;
+  background-color: #414141; /*#67c2ef;*/
+  /*border: 1px solid #39afea;*/
+  margin: auto;
+  text-shadow: 1px 1px #2F6E8E;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.2) inset,0 1px 1px rgba(100,100,100,0.3);
+  /*box-shadow: 0 1px 0 rgba(255,255,255,0.3) inset,0 1px 1px rgba(100,100,100,0.3);*/
+  /*background-image: url(icons/glyphicons-368-expand.png);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position-x: 120px;*/
+}
+
+.instrument-list-category-label:hover {
+  background-color: #232323;
+}
+
+.instrument-list-category-items {
+  width: 94%;
+  text-align: left;
+  overflow: hidden;
+  background-color: #6E6D6D;
+  padding-left: 6%;
+  padding: 4px;
+}
+
+.instrument-list-category-items:hover {
+  background-color: #0076B0;
+}
+
+.instrument-list-item-add {
+  background-image: url(icons/glyphicons-191-circle-plus.png);
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 20px;
+  float: right;
+  background-size: 13px;
+  margin-right: 5px;
+}
+
+.instrument-list-item-add:hover {
+  -webkit-filter: invert(100%);
+}
+
+/*background-image: url(icons/glyphicons-191-circle-plus.png);*/
